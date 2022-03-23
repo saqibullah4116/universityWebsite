@@ -14,7 +14,7 @@ function Carousel1() {
             className="d-block w-60"
             alt="..."
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption">
         <h5>Study in Uk</h5>
         <p>Some representative placeholder content for the second slide,Some representative placeholder content for the second slide.</p>
         <button type="button" className="btn btn-outline-warning">Explore More</button>
@@ -27,7 +27,7 @@ function Carousel1() {
             className="d-block w-60"
             alt="..."
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption ">
         <h5>Study in Germany</h5>
         <p>Some representative placeholder content for the second slide, Some representative placeholder content for the second slide.</p>
         <button type="button" className="btn btn-outline-warning">Explore More</button>
@@ -39,7 +39,7 @@ function Carousel1() {
             className="d-block w-60"
             alt="..."
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption ">
         <h5>Study in France</h5>
         <p>Some representative placeholder content for the second slide,Some representative placeholder content for the second slide.</p>
         <button type="button" className="btn btn-outline-warning">Explore More</button>

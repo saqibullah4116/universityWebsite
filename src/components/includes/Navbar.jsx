@@ -8,24 +8,24 @@ function Navbar() {
               
               <ul className="nav">
                 <li >
-                  <a href="!#" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
                     <i className="fas fa-phone "></i> +92 3089313393
-                  </a>
+                  </Link>
                 </li>
                 <li >
-                  <a href="!#" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
                     <i className="fas fa-envelope"></i> saqibullah@gmail.com
-                  </a>
+                  </Link>
                 </li>
                 <li >
-                  <a href="!#" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
                   <i className="fab fa-twitter"></i> Twitter
-                  </a>
+                  </Link>
                 </li>
                 <li >
-                  <a href="!#" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
                   <i className="fab fa-facebook"></i> Facebook
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -84,7 +84,7 @@ function Navbar() {
                 >
                   Services
                 </Link>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/linking universties">
                       Linking Universities
@@ -103,7 +103,7 @@ function Navbar() {
                       Something else here
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <Link
