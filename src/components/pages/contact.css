@@ -1,0 +1,47 @@
+
+	.contac-heading {
+		text-align: center;
+		font-size: 45px;
+		border-bottom: 2px dotted #fff;
+	}
+
+	#contact-container {
+		background:rgba(1,1,1,0.2);
+		
+	}
+
+	.btn-outline-primary {
+		width: 50%;
+		letter-spacing: 2px;
+		background: transparent;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.btn-outline-primary:hover {
+		transform: scale(1.04);
+	}
+
+	.icn {
+		font-family: monospace;
+		font-size: 17px;
+
+	}
+
+	.contact-hr {
+		width: 80%;
+	}
+
+	.contack-anchor{
+		color: black;
+		float: left;
+		font-family: monospace;
+		font-size: 22px;
+		margin-left: 23px;
+		margin-right: 10px;
+		transition: 0.3s ease-in-out;
+	}
+
+	.contack-anchor:hover {
+		color: white;
+	}
+

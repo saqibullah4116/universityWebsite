@@ -3,8 +3,8 @@ import universities from "../../entries";
 function Courses() {
   return (
     <div className="courses-main">
-      <div classNameName="courses-container">
-        <div classNameName="heading">
+      <div className="courses-container">
+        <div className="heading">
           <h1>Study Abroad</h1>
           <p>Most popular Study Destinations</p>
           <hr />
@@ -16,11 +16,11 @@ function Courses() {
 
         {universities.map((entry)=>{
                 return (
-                    <div className="col my-3">
-                    <div class="card" style={{ width: "18rem" }}>
+                    <div key={entry.id} className="col my-3">  
+                    <div className="card" style={{ width: "18rem" }}>
                       <img
                         src={entry.image}
-                        class="card-img-top"
+                        className="card-img-top"
                         alt="..."
                       />
                       <div className="card-body">

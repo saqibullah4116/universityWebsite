@@ -8,12 +8,8 @@ body{
 
   /* background-color: #d4c4c3;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png"); */
-  /* background-color: #f2f2f2;
-background-image: url("https://www.transparenttextures.com/patterns/food.png"); */
-/* background-color: #a1a1a1;
-background-image: url("https://www.transparenttextures.com/patterns/gray-floral.png"); */
-background-color: #ffffff;
-background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+  background-color: #f2f2f2;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
 
 }
 
@@ -21,8 +17,19 @@ background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre
   .carousel-inner > .carousel-item > img {
     height: 89vh;
     width: 100%;
-    filter: contrast(175%) brightness(50%);
+    filter: contrast(175%) brightness(60%);
 
+  }
+  .carousel-inner > .carousel-item > .carousel-caption >h5{
+	  color: white;
+	  font-size: 3rem;
+	
+}
+  .carousel-inner > .carousel-item > .carousel-caption{
+	  position: absolute;
+	  width:40%;
+	  left: 0;
+	  top: 30%;
   }
   
   /* for Course component */
@@ -32,14 +39,10 @@ background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre
     justify-content: center;
     color: black;
     margin-top: 50px;
-
+	font-size: 1.6rem;
  }  
- #courses-cards{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	text-align: center;
+ .courses-main > div > div h1{
+	 font-size: 4rem;
  }
  .courses-main > div > div hr {
   border: 3px solid black;
@@ -52,29 +55,9 @@ background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre
 }
 
 
-
-
-
-
+/* ////////////////////////////////////////////// */
 /* for Testimonial */
 
-/* section{
-	position: relative;
-	min-height: 100vh;
-	width: 100%;
-	background: #070c0d;
-	overflow: hidden;
-
-}
-section:before{
-	position: absolute;
-	content: '';
-	width: 2000px;
-	height: 100%;
-	bottom: -70%;
-	border-radius: 50%;
-	background: #3b7cf5;
-} */
 section .heading{
 	display: inline-block;
 	position: relative;
@@ -185,5 +168,49 @@ section .heading:before{
 .wrapper .container .social i:hover{
 	background: #3b7cf5;	
 }
+
+
+/* ///////////////////////////////////////////// */
+/* For whatsapp icon */
+
+/* for whatsappicon */
+/* for desktop */
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 1px 1px 1px #999;
+    z-index:100;
+}
+.whatsapp_float :hover{
+	transition: 0.2s ease-in-out;
+	transform: scale(1.2);
+	color: white;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
 
  
