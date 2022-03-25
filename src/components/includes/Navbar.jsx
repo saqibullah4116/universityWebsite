@@ -4,11 +4,50 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="nav-bar">
-      <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <nav className="nav navbar-light bg-light ul_top_hypers  py-0">
+              
+              <ul className="nav" style={{padding:"5px"}}>
+                <li >
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                    <i className="fas fa-phone "></i> +92 3089313393
+                  </Link>
+                </li>
+                <li >
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                    <i className="fas fa-envelope"></i> saqibullah@gmail.com
+                  </Link>
+                </li>
+                <li >
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                  <i className="fab fa-twitter"></i> Twitter
+                  </Link>
+                </li>
+                <li >
+                  <Link to="/" className="mx-3 a_top_hypers text-dark text-decoration-none">
+                  <i className="fab fa-facebook"></i> Facebook
+                  </Link>
+                </li>
+                <li className="mx-auto " >
+                  <Link to="/FAQ">  
+                <button className="btn btn-outline-secondary" type="button" style={{ height: "30px", width: "100px",marginLeft:"100px"}}>FAQ</button>
+                </Link>
+              </li>
+              </ul>
+             
+              {/* <button class="btn btn-primary pull-right btn-sm RbtnMargin" type="button" style={{ height: "25px", width: "60px" }}>Save</button> */}
+            </nav>
+
+      <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="!#">
+          <img
+            src="https://www.designevo.com/res/templates/thumb_small/green-leaf-and-opened-book.webp"
+            alt="logo"
+            height="80px"
+            style={{ marginRight: "10px", width: "100px" }}
+          />
+          <Link className="navbar-brand" to="/">
             <h2>University</h2>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,30 +67,32 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/contact"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link active" to="/about">
                   About
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <Link
-                  className="nav-link active dropdown-toggle"
-                  to="/services"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              <li className="nav-item">     {/*dropdown */}
+                <Link className="nav-link active " to="/services">
                   Services
                 </Link>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" href="/linking universties">
+                    <Link className="dropdown-item" to="/linking universties">
                       Linking Universities
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/opportunites">
-                       opportunities
+                      opportunities
                     </Link>
                   </li>
                   <li>
@@ -62,7 +103,7 @@ function Navbar() {
                       Something else here
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <Link
@@ -71,11 +112,10 @@ function Navbar() {
                   tabIndex="-1"
                   aria-disabled="true"
                 >
-                  Testimonials
+                  Our Students
                 </Link>
               </li>
             </ul>
-  
           </div>
         </div>
       </nav>

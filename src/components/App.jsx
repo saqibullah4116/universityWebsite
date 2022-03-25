@@ -10,15 +10,21 @@ import {
 import About from './pages/About';
 import Services from "./pages/Services";
 import Testimonial1 from "./pages/Testimonial1";
+import Contact from './pages/ContactUs';
+import FAQ from './pages/FAQ';
 
 function App(){
   return (
       <>
+        
         <Router>
           <Navbar />
           <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/contact">
+            <Contact/>
           </Route>
           <Route exact path="/about">
             <About />
@@ -28,6 +34,9 @@ function App(){
           </Route>
           <Route exact path="/testimonial">
             <Testimonial1 />
+          </Route>
+          <Route exact path="/FAQ">
+            <FAQ />
           </Route>
         </Switch>
           <Footer />
