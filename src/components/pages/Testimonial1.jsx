@@ -19,9 +19,9 @@ function Testimonials1(){
 				</div>
 				<p><span className="fa fa-quote-left left"></span>{entry.description}<span className="fa fa-quote-right right"></span></p>
 				<div className="social">
-					<i className="fab fa-twitter"></i>
-					<i className="fab fa-youtube"></i>
-					<i className="fab fa-instagram"></i>
+					<i className="fab fa-twitter testimonial-icon"></i>
+					<i className="fab fa-youtube testimonial-icon"></i>
+					<i className="fab fa-instagram testimonial-icon"></i>
 				</div>
 			</div>
                     );

@@ -192,7 +192,7 @@ section .heading:before {
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
-.wrapper .container .social i:hover {
+.wrapper .container .social .testimonial-icon:hover {
   background: #3b7cf5;
 }
 
@@ -217,17 +217,19 @@ section .heading:before {
 }
 .whatsapp_float :hover {
   transition: 0.2s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.5);
   color: white;
 }
 
 .whatsapp-icon {
   margin-top: 16px;
+  color: white;
 }
 /* for mobile */
 @media screen and (max-width: 767px) {
   .whatsapp-icon {
     margin-top: 10px;
+    color: white;
   }
   .whatsapp_float {
     width: 40px;
@@ -245,16 +247,17 @@ section .heading:before {
  /* for Navbar  */
  
 .nav-item{
-  margin-left:8px;
-  margin-right:10px;
+  margin-left:6px;
+  margin-right:6px;
 }
 .nav-item:hover{
-  border-bottom: 1px solid red;
-  letter-spacing: 1px;
+  border-bottom: 1px solid rgb(172, 7, 7);
+  /* letter-spacing: 0.1px; */
+  font-weight: bold;
   }
 
 @media (min-width: 768px){
   .navbar-nav > li:not(:last-child) {
-    box-shadow: 10px 0 0 -8px black; 
+    box-shadow: 9.5px 1px 0 -9px black; 
   }
 }
