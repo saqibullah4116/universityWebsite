@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
- 
-}
+
 
 /* for carousel */
 .carousel-inner > .carousel-item > img {
@@ -237,5 +235,26 @@ section .heading:before {
     bottom: 20px;
     right: 10px;
     font-size: 22px;
+  }
+}
+
+
+
+
+
+ /* for Navbar  */
+ 
+.nav-item{
+  margin-left:8px;
+  margin-right:10px;
+}
+.nav-item:hover{
+  border-bottom: 1px solid red;
+  letter-spacing: 1px;
+  }
+
+@media (min-width: 768px){
+  .navbar-nav > li:not(:last-child) {
+    box-shadow: 10px 0 0 -8px black; 
   }
 }
